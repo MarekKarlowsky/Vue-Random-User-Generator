@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+/* разметка */
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 25%;
+    height: 80%;
+    background-color: #29293d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+#app[v-cloak]{
+    display: none;
+}
+/*****************************************/
+
+
+/* кнопка */
+button{
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-style: none;
+    color: black;
+    border-radius: 10px;
+}
+
+button:hover{
+    opacity: 0.8;
+    transform: scale(1.025);
+}
+/****************************/
+
+
+
+/* пикча */
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+img:hover{
+    transform: scale(1.025);
+}
+
+/* **************************** */
+
+/*классы для пола юзера*/
+.male{
+    border: #3366cc 5px solid;
+}
+
+.female{
+    border:  #e699ff 5px solid;
+}
+/*****************************/
+
+
+
+
+/*media запросы*/
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 60%;
+    }
+}
+
+/******************************/
